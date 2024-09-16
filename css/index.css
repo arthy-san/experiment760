@@ -1,0 +1,122 @@
+@font-face {
+	font-family: 'BigNoodle'; 
+	src: url(/assets/font/bignoodletitlingcyr.ttf); 
+}
+
+/* Стиль для горизонтальных линий */
+hr {
+  border: none; /* Убираем стандартную границу */
+  color: black; /* Цвет текста по умолчанию */
+  background-color: black; /* Цвет фона для горизонтальной линии */
+  height: 4px; /* Толщина линии */
+}
+
+.head {
+  display: flex;
+}
+
+.head  b{
+  margin-left: 29.5%;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Стиль для логотипа в шапке */
+.head a img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  width: 85%; /* Ширина логотипа */
+}
+
+/* Стиль для абзацев */
+p {
+  font-size: 44px; /* Размер шрифта для абзацев */
+  margin: 0; /* Убираем стандартные отступы */
+}
+
+/* Стиль для текста жирным шрифтом */
+.info b {
+  float: right;
+  font-size: 48px;
+  margin-right: 15px; /* Размер шрифта для текста жирным */
+  margin-bottom: 10px; /* Отступ снизу для каждого элемента <b> */
+}
+
+/* Стиль для тела страницы */
+body {
+  background-image: url('/assets/img/background.jpg'); /* Фоновое изображение */
+  background-size: cover; /* Растягиваем фоновое изображение на весь фон */
+  background-position: center; /* Центрируем фоновое изображение */
+  overflow-x: hidden; /* Прячем горизонтальную прокрутку */
+  margin: 0; /* Убираем стандартные отступы */
+  font-family: 'BigNoodle' /* Шрифт по умолчанию */
+}
+
+h2 {
+  font-size: 50px;
+}
+
+/* Дополнительно: Очистка флоатов для предотвращения проблем с наложением */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Общий стиль для контейнеров, содержащих текст и изображение */
+.text-image-container {
+  display: flex; /* Используем Flexbox для выравнивания элементов */
+  align-items: center; /* Выравнивание элементов по центру по вертикали */
+  margin-bottom: 20px; /* Отступ снизу между блоками */
+
+}
+
+/* Стиль для текстового блока */
+.text-image-container .text {
+  margin-bottom: 11.2%;
+  margin-right: 20px; /* Отступ справа от текста до изображения */
+  font-size: 44px; /* Размер шрифта для текста */
+  line-height: 125%;
+
+}
+
+/* Стиль для изображения */
+.text-image-container img {
+  width: 22%; /* Ширина изображения */
+ /* Автоматическая высота для сохранения пропорций */
+  margin-right: 4%;
+  margin-top: 2% ;
+  border-style: solid;
+  border-width: 2px;
+
+}
+
+/*.footer-content {
+  display: flex; 
+  align-items: center; /* Выравнивание элементов по центру 
+  justify-content: center; /* Элементы будут центрированы по горизонтали 
+  flex-direction: row-reverse;
+}
+*/
+
+/* Общий стиль для контейнеров, содержащих текст и изображение */
+.footer-content {
+  display: flex; /* Используем Flexbox для выравнивания элементов */
+  flex-direction: row-reverse;
+  align-items: center; 
+}
+
+/* Стиль для текстового блока */
+.footer-content .text {
+  margin-right: 23%; /* Отступ справа от текста до изображения */
+  font-size:26px; /* Размер шрифта для текста */
+}
+
+/* Стиль для изображения */
+.footer-content img {
+  width: 9%; /* Ширина изображения */
+  margin-right: 15%;
+  margin-top: 1,5% ;
+  margin-bottom: 1,5%;
+}
